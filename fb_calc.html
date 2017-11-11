@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FB Audience Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="fb_calc.css" type="text/css" rel="stylesheet">
+</head>
+
+  
+<body>
+  <div id="main-wrapper">
+  <header>
+    <h1 id="title">Facebook Audience Calculator</h1>
+  </header>
+
+  <section id="step1">
+    <form id="calculate" action="" method="POST">
+      <label for="audience">Offline Audience Size:</label>
+      <input id="audience" type="text" name="audience_size">
+      <button type="submit" id="calcButton">Calculate</button>
+    </form>
+  </section>
+ 
+  <section id="impressionResults">
+    <p>Your total estimated availabe impressions for a 30 day campaign are:</p>
+    <button type="submit" id="seeMore">Click to See Full Details</button>
+  </section>
+
+  <section id="fullDetails">
+    <div class="details" id="matched">
+    </div>
+  
+    <div class="details" id="campaign">        
+    </div>
+
+    <div class="details" id="totals">
+    </div>
+
+  </section>
+
+  <div id="editingButtons">
+    <button type="submit" id="editDetailsButton">Edit</button>
+    <button type="submit" id="resetDetailsButton">Reset</button>
+  </div>
+
+</div>
+  <script src="fb_calc_script.js" type="text/javascript"></script>
+</body>
+
+</html>
