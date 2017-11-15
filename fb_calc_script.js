@@ -230,6 +230,7 @@ editingButtons.addEventListener('click', (e) => {
             error.id = 'revisionError';
             mainWrapper.appendChild(error);
             error.style.textAlign = 'center';
+			error.style.msGridColumn = '2';
             error.style.gridColumn = '2 / 3';
             error.style.paddingBottom = '50px';
           } else {
